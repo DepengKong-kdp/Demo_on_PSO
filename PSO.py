@@ -63,6 +63,6 @@ for i in range(options.iterations):
     # visualization
     plt.clf()
     plt.pcolormesh(xx, yy, z)
-    plt.scatter(x[:,0], x[:,1], c='red')
+    plt.scatter(x[:,0], x[:,1], c='red', s=10)
     plt.pause(0.01)
 plt.ioff()
