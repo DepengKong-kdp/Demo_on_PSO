@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 
 # generating the working space and the fitness function---Gaussion Distribution
 def gaussion_func(x, y):
-    z = (1/2*np.pi) * np.exp(-1/10 * ((x+5)**2 + (y+5)**2)) + (1/2*np.pi) * np.exp(-1/20 * ((x-5)**2 + (y-5)**2))*0.6
+    z = (1/2*np.pi) * np.exp(-1/15 * ((x+5)**2 + (y+5)**2)) + (1/2*np.pi) * np.exp(-1/20 * ((x-5)**2 + (y-5)**2))*0.5
     return z
 
 
@@ -63,6 +63,6 @@ for i in range(options.iterations):
     # visualization
     plt.clf()
     plt.pcolormesh(xx, yy, z)
-    plt.scatter(x[:,0], x[:,1], c='red', s=10)
+    plt.scatter(x[:,0], x[:,1], c='red', s=100, marker='X')
     plt.pause(0.01)
 plt.ioff()
