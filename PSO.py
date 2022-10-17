@@ -37,7 +37,7 @@ class Options:
 
 # init particle states
 options = Options()
-x = np.random.rand(options.num_particles, 2) * 20 - 10  # initial positions
+x = np.random.rand(options.num_particles, 2) * 30 - 15  # initial positions
 v = np.random.rand(options.num_particles, 2)            # initial velocity
 pBest = np.zeros(shape=(options.num_particles, 2))      # positions of partial best fitness
 gBest = np.zeros(shape=(1, 2))                          # position of global best fitness
