@@ -29,10 +29,10 @@ class Options:
         self.c_1 = 2              # learning factor c1 for partial bests
         self.c_2 = 2              # learning factor c2 for global best
         self.x_range = 15         # limitation of particle position
-        self.v_range = 0.5        # limitation of particle velocity
+        self.v_range = 1.2        # limitation of particle velocity
         self.w_init = 1.5         # initial value of momentum for velocity
         self.e_end = 0.4          # end value of momentum for velocity
-        self.iterations = 100     # number of iterations
+        self.iterations = 150     # number of iterations
 
 
 # init particle states
