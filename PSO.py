@@ -65,4 +65,4 @@ for i in range(options.iterations):
     plt.pcolormesh(xx, yy, z)
     plt.scatter(x[:,0], x[:,1], c='red')
     plt.pause(0.01)
-
+plt.ioff()
